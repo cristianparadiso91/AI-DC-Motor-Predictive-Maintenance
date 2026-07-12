@@ -1,0 +1,19 @@
+/*
+  Arduino Uno Blink Test
+
+  Purpose:
+  Confirms that the Arduino Uno, USB connection,
+  selected COM port, and code upload are working.
+*/
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
