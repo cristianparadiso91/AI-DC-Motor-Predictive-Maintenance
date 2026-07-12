@@ -1,20 +1,21 @@
 # Hardware Parts List
 
-This document contains the components used to build the AI-based predictive maintenance system for a DC motor.
-
 | No. | Component | Quantity | Purpose | Status |
 |---:|---|---:|---|---|
-| 1 | DC motor | 1 | Motor being monitored | Obtained |
-| 2 | Microcontroller | 1 | Reads sensor measurements | Obtained |
-| 3 | Motor driver | 1 | Controls the DC motor | Obtained |
-| 4 | Vibration sensor | 1 | Measures motor vibration | Obtained |
-| 5 | Temperature sensor | 1 | Measures motor temperature | Obtained |
-| 6 | Current sensor | 1 | Measures electrical current | Obtained |
-| 7 | Rotational-speed sensor | 1 | Measures motor speed | Obtained |
-| 8 | Breadboard | 1 | Temporary electrical connections | Obtained |
-| 9 | Jumper wires | Multiple | Connects the electronic components | Obtained |
-| 10 | Power supply | 1 | Powers the motor and electronics | Obtained |
-| 11 | Motor mounting platform | 1 | Secures the motor during testing | Obtained |
+| 1 | 12 V 500 RPM N20 DC gearmotor with encoder | 2 | Motor being monitored and spare motor | Obtained |
+| 2 | Arduino Uno R3 | 1 | Reads sensors and controls the system | Obtained |
+| 3 | L298N dual H-bridge motor driver | 1 | Controls motor direction and speed | Obtained |
+| 4 | GY-521 MPU-6050 accelerometer/gyroscope | 1 | Measures motor vibration | Obtained |
+| 5 | Waterproof DS18B20 temperature probe | 5 | Measures motor temperature | Obtained |
+| 6 | ACS712 Hall-effect current-sensor module | 1 | Measures motor current | Obtained; range must be verified |
+| 7 | Motor encoder | Integrated with motor | Measures rotational speed | Obtained |
+| 8 | Solderless breadboard | 1 | Temporary electrical connections | Obtained |
+| 9 | Jumper wires and sensor cables | Multiple | Connects components | Obtained |
+| 10 | JOVNO 12 V 1 A DC adapter | 1 | Powers the motor driver | Obtained; capacity must be tested |
+| 11 | DC barrel-jack screw-terminal adapter | 1 | Connects the adapter to the motor driver | Obtained |
+| 12 | Pull-up resistors | 5 | Supports DS18B20 data communication | Obtained; resistance must be verified |
+| 13 | N20 motor mounting bracket and base | 1 | Secures the motor safely | Needed |
+| 14 | Arduino USB programming cable | 1 | Programs and powers the Arduino during testing | Needed |
 
 ## Notes
 
