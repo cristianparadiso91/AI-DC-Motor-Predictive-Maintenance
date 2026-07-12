@@ -15,7 +15,7 @@
 | 11 | DC barrel-jack screw-terminal adapter | 1 | Connects the adapter to the motor driver | Obtained |
 | 12 | Pull-up resistors | 5 | Supports DS18B20 data communication | Obtained; resistance must be verified |
 | 13 | N20 motor mounting bracket and base | 1 | Secures the motor safely | Needed |
-| 14 | Arduino USB programming cable | 1 | Programs and powers the Arduino during testing | Needed |
+| 14 | Arduino USB programming cable | 1 | Programs and powers the Arduino during testing | Obtained |
 
 ## Notes
 
