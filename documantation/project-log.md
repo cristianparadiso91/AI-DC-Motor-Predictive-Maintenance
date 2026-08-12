@@ -68,3 +68,33 @@ The Arduino successfully controlled the DC motor through the L298N motor driver.
 - Motor test video: `videos/first-controlled-motor-test.mp4`
 - Wiring photograph: `images/assembly/motor-driver-wiring.jpg`
 - Arduino code: `firmware/motor-control/motor-diagnostic.ino`
+
+## Milestone 4 — Encoder Pulse Test
+
+**Date:** August 12, 2026
+
+### Work Completed
+
+- Connected the GA12-N20 motor encoder to the Arduino Uno.
+- Supplied the encoder with 5 V and GND from the Arduino.
+- Connected encoder Channel A to Arduino digital pin D2.
+- Connected encoder Channel B to Arduino digital pin D3.
+- Used a solderless breadboard to make secure encoder connections.
+- Uploaded an Arduino program to count encoder pulses.
+- Successfully received encoder pulse data in the Serial Monitor.
+
+### Result
+
+The motor encoder successfully detected shaft rotation and transmitted pulse signals to the Arduino.
+
+During testing, the Serial Monitor recorded pulse counts above zero, confirming that the encoder, Arduino, and wiring were functioning correctly.
+
+### Evidence
+
+- Arduino code: `firmware/encoder/encoder-pulse-test.ino`
+- Test screenshot: `images/testing/encoder-pulse-test.jpg`
+- Test video: `videos/encoder-pulse-test-working.mp4`
+
+### Next Step
+
+Convert the measured encoder pulses into motor RPM and display the motor speed in real time.
