@@ -98,3 +98,61 @@ During testing, the Serial Monitor recorded pulse counts above zero, confirming 
 ### Next Step
 
 Convert the measured encoder pulses into motor RPM and display the motor speed in real time.
+
+## Milestone 5 — Live Motor RPM Measurement
+
+**Date:** August 12, 2026
+
+### Objective
+
+Measure the rotational speed of the GA12-N20 DC gearmotor using its built-in encoder and display the calculated RPM in real time through the Arduino Serial Monitor.
+
+### Work Completed
+
+* Used the motor's built-in encoder to monitor shaft rotation.
+* Powered the encoder from the Arduino 5 V supply.
+* Connected the encoder ground to Arduino GND.
+* Connected encoder Channel A to Arduino digital pin D2.
+* Connected encoder Channel B to Arduino digital pin D3.
+* Used an interrupt-based Arduino program to count encoder pulses.
+* Converted the measured pulse rate into an estimated motor RPM.
+* Displayed both pulses per second and motor speed in the Arduino Serial Monitor.
+
+### Test Results
+
+During startup, the motor speed increased until reaching a stable operating condition.
+
+Once stabilized, the encoder produced approximately **3000 pulses per second**.
+
+Using the current calibration value of **350 counts per output-shaft revolution**, the calculated motor speed stabilized at approximately:
+
+**514–517 RPM**
+
+Example readings included:
+
+* 3002 pulses/s → 514.6 RPM
+* 3009 pulses/s → 515.8 RPM
+* 3011 pulses/s → 516.2 RPM
+* 3018 pulses/s → 517.4 RPM
+
+The relatively small variation in the steady-state readings shows that the encoder is providing consistent rotational-speed measurements.
+
+### Engineering Note
+
+The value of **350 counts per output-shaft revolution** is currently being used as the encoder calibration value. This value will be verified or refined during later testing before it is treated as the final calibrated RPM measurement.
+
+### Result
+
+The Arduino successfully receives encoder pulses and converts them into a real-time estimate of motor speed.
+
+This completes the first working RPM-monitoring stage of the predictive-maintenance system.
+
+### Evidence
+
+* Arduino RPM program: `firmware/encoder/rpm-monitor.ino`
+* RPM test screenshot: `images/testing/live-rpm-test.jpg`
+* RPM test video: `videos/live-rpm-test.mp4`
+
+### Next Step
+
+Collect a baseline set of RPM measurements while the motor operates normally. These measurements will later be compared with data from different motor conditions and additional sensors such as current, temperature, and vibration.
