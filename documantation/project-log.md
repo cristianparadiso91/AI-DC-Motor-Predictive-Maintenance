@@ -46,3 +46,25 @@ The Arduino Uno, USB cable, computer connection, and programming environment are
 - Component photograph: `images/components/initial-components.jpg`
 - Blink-test video: `videos/arduino-blink-test.mp4`
 - Test code: `firmware/blink-test/blink-test.ino`
+
+## Milestone 3 — First Controlled Motor Test
+
+**Date:** August 5, 2026
+
+### Work Completed
+
+- Mounted the 12 V N20 gearmotor securely.
+- Connected the motor to the L298N motor driver.
+- Connected the L298N control inputs to the Arduino Uno.
+- Corrected the control connections using male-to-female jumper wires.
+- Uploaded and tested the Arduino motor-control program.
+
+### Result
+
+The Arduino successfully controlled the DC motor through the L298N motor driver.
+
+### Evidence
+
+- Motor test video: `videos/first-controlled-motor-test.mp4`
+- Wiring photograph: `images/assembly/motor-driver-wiring.jpg`
+- Arduino code: `firmware/motor-control/motor-diagnostic.ino`
